@@ -1,0 +1,47 @@
+# AddisNest — .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+env/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset files — too large for GitHub
+*.csv
+*.parquet
+*.pkl
+
+# Model file — too large for GitHub (download separately or use Git LFS)
+model_output/*.joblib
+
+# Keep the plots though
+!model_output/*.png
+!eda_output/*.png
+
+# OS stuff
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Colab
+sample_data/
